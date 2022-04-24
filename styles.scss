@@ -1,0 +1,341 @@
+
+$primary-color-1: rgb(248, 252, 253);
+$primary-color-2 :  #378DD1;
+$secondary-color-scuro: #13586b;
+$secondary-color-chiaro: #C2F9FFF8;
+
+
+body {
+    background-color: rgb(248, 252, 253);
+    font-family: 'Open Sans', sans-serif;
+   
+}
+h1 {
+    color: $primary-color-2;
+    h2 , h3 {
+        font-size: 40px;
+    }
+}
+p {
+    font-size: 16px;
+}
+
+a{
+    color: $primary-color-2;
+}
+
+
+/* ---- NAVBAR ---- */ 
+
+.nav {
+    display: flex;
+}
+.navbar{     /* Gradiente per la navbar */
+   background: $primary-color-2;
+   justify-content: center;
+   width: 100%;
+}
+.nav-link {
+    color: white;
+    padding: 0.25rem 1rem;
+}
+
+
+.navbar-nav {
+ flex-direction: row;
+}
+.nav-item {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px;
+}
+
+
+
+
+/* ----CHI SONO ---- */
+
+.caption {
+       
+    font-family: 'roboto', sans-serif;
+    font-size: 10px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -20px;
+    overflow: hidden;
+    height: 100%;
+    img {
+        float: left;
+        margin: 0;
+        padding-top: 59px; /* padding per risolvere l'overflow sulla navbar */
+        background: #fff;
+        border: none;
+        width: 100%;
+       
+        
+        
+      
+    }
+    span {
+        text-align: center;
+         margin: 0;
+         padding: 10px;
+         width: 100%;
+         color: #dedede;
+         background: #222; /* browser che non supportano rgba */
+         background: rgba(0,0,0,0.7);
+         position: absolute;
+         left: 0;
+         bottom: 0;
+         strong {
+            font-weight: bold;
+            font-size: 30px;
+            display: block;
+            padding-bottom: 5px;
+        }
+     }  
+}
+
+ 
+.illustration{ /* Immagine del " Chi Sono " larga quanto il container */
+    padding: 20px 0px ;
+    img{  /* --- Classe per l'immagine " CHI SONO " ----*/
+        width: 100%;
+       display: block;
+    }
+}
+
+/* COMPETENZE */
+
+
+.skill{
+    background-color: $primary-color-2;
+    width: 100%;
+}
+ 
+.competenze  {
+    width: 100%;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px $primary-color-2 solid;
+
+}
+
+/* grassetto sezione competenze */
+.lead {
+    font-weight: 400;
+}
+    .bg-light , .bg-dark {
+    width: 100%;
+}
+
+
+.my-3 {
+    padding: 30px 50px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.img-competenze {
+    height: 150px;
+    width: min-content;
+    
+    
+}
+
+/* --- footer --- */
+
+.footer {
+    
+}
+.col-12 ,
+.col-sm-6 {     /* --- Padding per centrare un po il contenuto nelle varie sezioni ---- */
+    padding: 20px 50px;
+}
+.illustration {
+    /* Immagine del " Chi Sono " larga quanto il container */
+    padding: 20px 0px;
+  }
+
+
+ol{
+     ul {   /* Posizionamento icone Social */
+    justify-content: center;
+    display: flex;
+    padding-left: 0px;   /* si crea un padding-left di 20 , annullato */}
+   
+}
+.contatto-email {  /* Class per allineare l'intestazione contatti sul footer */
+    text-align: center;
+ }
+
+ /* --- FORM ---*/
+
+form{
+     h1 {
+    font-size: 30px;
+    justify-content: center;
+    width: 100%;}
+}
+
+.speaker-form {  /* --- grafica form ---*/
+    background-color: $primary-color-1 ;
+    border: 1px solid $primary-color-2;
+    border-radius: 40px;
+    padding: 23px 47px;
+    margin: 0 0 40px 0;
+  }
+
+  .btn-invia {  /* ---- grafica bottone --- */
+    background-color: $primary-color-2;
+    color: white;
+    margin-top: 15px;
+    
+}
+.btn-posizione {  /* --- posizione pulsante invia del Form -- */
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 30px;
+}
+.testo-copyright {
+    color: white;
+}
+/* --- FINE FORM ---*/
+
+
+
+footer ul {  /* ---- collegamenti icone social --- */
+    list-style-type: none;
+    li {padding: 0px 30px;}
+}
+
+form .row {   /*  --- padding tra gli input del FORM --- */
+    padding: 10px ;
+    :first-of-type {
+        padding-top: 10px;
+    }
+}
+
+.nav {  /* icone social */
+    flex-wrap: nowrap;
+}
+
+.footer-end {
+    background-color: rgb(244,244,244);
+    max-width: 100%;
+}
+
+/* Color Footer */
+.d-flex { 
+    background-color: $primary-color-2;
+}
+
+.bi {
+    color: white;
+}
+
+/* ---- MEDIA QUERLY --- */
+
+/*---- PROVA MEDIA QUERLY */
+@media screen and (min-width:720px) {
+   
+    
+/* ---- MEDIA QUERLY --- */
+
+
+
+
+ 
+h3{
+    padding-left: 10px;
+}
+p {
+    font-size: 18px;
+}
+    
+
+
+.navbar {
+    align-items: flex-end;
+    display: flex; 
+}
+
+
+.immagine-sfondo { /* capire a cosa serve questo selettore */
+    display: flex;
+    max-height: inherit;
+   /* background: linear-gradient(rgba(100, 100, 100, 0.484), rgb(64, 64, 64));
+    background-image: url(img/immagine-sfondo.jpg); */ 
+     background-repeat: no-repeat;
+     background-position:  center;
+     background-size: contain;
+     color: red;
+     align-items: flex-end;
+     justify-content: center;
+}
+
+ /* -- NAVBAR PROPRIETY --*/
+    
+    
+    
+ .navbar.nav {
+    z-index:1;
+  position: relative; 
+
+}
+
+
+
+
+
+.collapse {
+    justify-content: center ;
+}
+
+
+.row{
+    
+    padding-top: 20px;
+    justify-items: flex-start;
+
+}
+
+/* --- CHI SONO ---*/
+
+ 
+ /* --- competenze --*/
+
+.immagini{
+    width: 300px;
+}
+.col-6 {
+    border-color: rgb(207, 207, 207);
+    border-right-style: solid;
+    border-width: 2px;
+}
+.contatto-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+}
+.forme-contatti {
+    padding-bottom: 20px;
+}
+
+
+}
+
+@media screen and (min-width: 1200px) {
+
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 920px;
+}
+}
+
+
